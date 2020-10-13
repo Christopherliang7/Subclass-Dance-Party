@@ -6,21 +6,22 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/jumpyDancer.js"></script>
+    <script src="src/slidyDancer.js"></script>
+    <script src="src/images.js"></script>
+    <script src="src/audio.js"></script>
+
   </head>
   <body>
+    <audio class='music' autoplay loop>
+      <source src="audio/song.mp3" type="audio/mpeg">
+    </audio>
     <div class="topbar">
       <span class="title">object dance party</span>
-
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
-
-      <a href="#" class="addJumpyDancerButton" data-dancer-maker-function-name="makeJumpyDancer">add a jumpy dancer</a>
-
-      <a href="#" class="addSlidyDancerButton" data-dancer-maker-function-name="makeSlidyDancer">add a slidy dancer</a>
-
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="jumpyDancer">add a jumpy dancer</a>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="slidyDancer">add a slidy dancer</a>
       </div>
     <script src="src/init.js"></script>
-    <!-- <audio class="country-music">
-      <source src="audio/pop.wav" type="audio/mpeg">
-    </audio> -->
   </body>
 </html>

@@ -1,11 +1,14 @@
 var slidyDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  // this.$node = $('<span class="blinkyDancer"></span>');
+  this.$node = $('<span class="dancer3"><img src="images/3.gif" class="dance3"></span>');
   this.job = 'electric-slide';
+  this.top = top;
+  this.left = left;
+  this.setPosition(top, left);
 };
 
 slidyDancer.prototype = Object.create(makeDancer.prototype);
-slidyDance.prototype.constructor = slidyDancer;
+slidyDancer.prototype.constructor = slidyDancer;
 
 slidyDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);

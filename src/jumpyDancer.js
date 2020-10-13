@@ -1,7 +1,10 @@
 var jumpyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  // this.$node = $('<span class="jumper"></span>');
+  this.$node = $('<span class="dancer2"><img src="images/image1.gif"></span>');
   this.job = 'jump';
+  this.top = top;
+  this.left = left;
+  this.setPosition(top, left);
 
 };
 
